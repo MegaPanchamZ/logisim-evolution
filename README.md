@@ -58,17 +58,6 @@ gradlew shadowJar
 ```
 which will create a new jar file in `build/libs` called `logisim-evolution-<version>-all.jar` you can distribute freely.
 
-On macOS, you can build a native app bundle `Logisim-evolution.app` using:
-```bash
-./gradlew createApp
-```
-which you will afterwards find in the folder `build/macApp/`. This has the advantage that `.circ` files get automatically associated to the `Logisim-evolution.app` so that you can open them directly in the Finder. *Note:* Curently, the app needs a separately installed compatible JDK/JRE to execute. You may also build a DMG image `logisim-evolution-<version>.dmg` containing `Logisim-evolution.app` for distribution:
-```
-./gradlew createDmg
-```
-which you will find in the folder `build/distribution`.
-
-
 ## Testing logisim-evolution
 
 As logisim-evolution needs updates (new features and patches) and currently lacks unit tests, the *testing* branch was created.
@@ -82,16 +71,12 @@ All logisim java files have been converted using google-java-format. If you are 
 
 ## Documentation
 
-[Here](http://reds-data.heig-vd.ch/logisim-evolution/IntroToLogisimEnglish.pdf) you can find a tutorial (French version [here](http://reds-data.heig-vd.ch/logisim-evolution/tutoLogisim.pdf)) that explains some basic usage of Logisim. The electronic card referenced in the tutorial is a small card we use in our laboratories -- you won't be able to buy it in a store -- but the descriptions should be good enough to be used for another generic board.
-
-Another good reference is [this book](https://github.com/grself/CIS221_Text/raw/master/dl.pdf), the accompanying [lab manual](https://github.com/grself/CIS221_Lab_Manual/raw/master/dl_lab.pdf), and [YouTube channel](http://bit.ly/2KLMcoc), where basic electronics is explained with the help of Logisim.
+A good reference is [this book](https://github.com/grself/CIS221_Text/raw/master/dl.pdf), the accompanying [lab manual](https://github.com/grself/CIS221_Lab_Manual/raw/master/dl_lab.pdf), and [YouTube channel](http://bit.ly/2KLMcoc), where basic electronics is explained with the help of Logisim.
 
 
 ## Development
 
 Logisim-evolution uses gradle for project management which means it can be easily imported into most modern IDEs.
-
-Instructions on how to import a gradle project into Eclipse can be found [here](https://www.eclipse.org/community/eclipse_newsletter/2018/february/buildship.php).
 
 Instructions on how to import a gradle project into IntelliJ IDEA can be found [here](https://www.jetbrains.com/help/idea/gradle.html) under "Importing a project from a Gradle model" title.
 
@@ -136,14 +121,6 @@ The following institutions/people actively contributed to logisim-evolution:
 
 * Carl Burch - Hendrix College - USA
 * Kevin Walsh [College of the Holy Cross](http://www.holycross.edu) - USA
-* [Haute École Spécialisée Bernoise](http://www.bfh.ch) - Switzerland
-* [Haute École du paysage, d'ingénierie et d'architecture de Genève](http://hepia.hesge.ch) - Switzerland
-* [Haute École d'Ingénierie et de Gestion du Canton de Vaud](http://www.heig-vd.ch) - Switzerland
-* Theldo Cruz Franqueira - Pontifícia Universidade Católica de Minas Gerais - Brasil
-* Moshe Berman - Brooklyn College
-
-If you feel that your name should be in this list, please feel free to send us a [mail](mailto:ktt1@bfh.ch)!
-
 
 ## Other Logisim forks available on the net
 
